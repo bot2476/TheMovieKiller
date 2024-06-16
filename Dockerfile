@@ -8,5 +8,5 @@ RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
 RUN mkdir /TheMovieKiller
 WORKDIR /TheMovieKiller
-COPY start.sh /start.sh
+COPY start.sh /TheMovieKiller
 CMD ["/bin/bash", "/start.sh"]
